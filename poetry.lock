@@ -39,7 +39,7 @@ test = ["coverage", "pexpect", "wheel", "ruff", "mypy"]
 name = "asgi-lifespan"
 version = "2.1.0"
 description = "Programmatic startup/shutdown of ASGI apps."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -239,7 +239,7 @@ python-versions = ">=3.7"
 name = "httpcore"
 version = "0.17.3"
 description = "A minimal low-level HTTP client."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -268,7 +268,7 @@ test = ["Cython (>=0.29.24,<0.30.0)"]
 name = "httpx"
 version = "0.24.1"
 description = "The next generation HTTP client."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -561,6 +561,21 @@ tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
 testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
 
 [[package]]
+name = "pytest-asyncio"
+version = "0.21.1"
+description = "Pytest support for asyncio"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+pytest = ">=7.0.0"
+
+[package.extras]
+docs = ["sphinx (>=5.3)", "sphinx-rtd-theme (>=1.0)"]
+testing = ["coverage (>=6.2)", "hypothesis (>=5.7.1)", "flaky (>=3.5.0)", "mypy (>=0.931)", "pytest-trio (>=0.7.0)"]
+
+[[package]]
 name = "python-dotenv"
 version = "1.0.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -758,7 +773,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "06d58f9abb3c6b6086f7ab91fdac4e7199cde0947ac68babde08b0945dc81228"
+content-hash = "de82e30ae6862b82b69cb79301ce7737900205a15470f4ba275e5a9480077e65"
 
 [metadata.files]
 annotated-types = []
@@ -809,6 +824,7 @@ pydantic-core = []
 pyrsistent = []
 pysnooper = []
 pytest = []
+pytest-asyncio = []
 python-dotenv = []
 pyyaml = []
 requests = []
