@@ -170,6 +170,14 @@ trio = ["trio (>=0.14,<0.23)"]
 wmi = ["wmi (>=1.5.1,<2.0.0)"]
 
 [[package]]
+name = "dredd-hooks"
+version = "0.2.0"
+description = "Python Hooks Bridge for Dredd API Testing Framework"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "email-validator"
 version = "2.0.0.post2"
 description = "A robust email address syntax and deliverability validation library."
@@ -727,7 +735,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "ba7946fab67915994c2c0b2ec4b931e7efceaa90fff8fec4dcf63cfbbcb31f63"
+content-hash = "1ef2643c3b99b356c92bb96b6fc7943fb30271f54614c38b21b90ebea181746a"
 
 [metadata.files]
 annotated-types = []
@@ -743,6 +751,7 @@ click = []
 colorama = []
 datamodel-code-generator = []
 dnspython = []
+dredd-hooks = []
 email-validator = []
 exceptiongroup = []
 fastapi = []
