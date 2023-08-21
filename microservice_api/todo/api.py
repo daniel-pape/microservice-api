@@ -5,8 +5,8 @@ from fastapi import HTTPException
 from starlette import status
 from starlette.responses import Response
 
-from todo.schemas import ListTasksSchema, GetTaskSchema, CreateTaskSchema
-from todo.server import server
+from .schemas import ListTasksSchema, GetTaskSchema, CreateTaskSchema
+from .server import server
 
 TODO = []
 
